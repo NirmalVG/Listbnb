@@ -9,10 +9,8 @@ import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
 import EditProfile from "./screens/EditProfile/EditProfile";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import PostAdForm from "./components/PostAdForm/PostAdForm";
-import AdDetail from "./pages/AdDetailPage/AdDetailPage";
 import Advertisements from "./screens/Advertisements/Advertisements";
 import AdDetailPage from "./pages/AdDetailPage/AdDetailPage";
-import ProfileHeader from "./components/ProfileHeader/ProfileHeader";
 
 function App() {
   return (
@@ -25,10 +23,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <DashboardLayout>
-                  <div className="flex-1 space-y-6">
-                    <ProfileHeader />
-                    <Advertisements />
-                  </div>
+                  <Profile />
                 </DashboardLayout>
               </ProtectedRoute>
             }

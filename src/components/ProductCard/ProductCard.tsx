@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
-import { Heart } from "lucide-react";
 
 interface ProductCardProps {
   id: string;

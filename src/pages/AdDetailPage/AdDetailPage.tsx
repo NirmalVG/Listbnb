@@ -1,10 +1,7 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Mail, Phone } from "lucide-react";
 import useAdvertisementDetails from "@/logic/useAdvertisementDetails";
 
 const AdDetailPage = () => {
-  const { data, error, isLoading, refetch } = useAdvertisementDetails();
+  const { data, error, isLoading } = useAdvertisementDetails();
 
   console.log(data, "data");
 

@@ -78,7 +78,7 @@ const RegisterForm = () => {
 
             const data = response.data;
             localStorage.setItem("token", data.jwt);
-            localStorage.setItem("isRegistered", true);
+            localStorage.setItem("isRegistered", "true");
             navigate("/login");
           } catch (error) {
             if (axios.isAxiosError(error)) {
